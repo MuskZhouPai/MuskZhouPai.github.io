@@ -6,7 +6,7 @@
   <link href="https://blog.paipai.site/atom.xml" rel="self"/>
   
   <link href="https://blog.paipai.site/"/>
-  <updated>2024-10-09T14:02:20.304Z</updated>
+  <updated>2024-08-12T01:54:36.833Z</updated>
   <id>https://blog.paipai.site/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>verify</title>
-    <link href="https://blog.paipai.site/post/verify.html"/>
-    <id>https://blog.paipai.site/post/verify.html</id>
-    <published>2024-10-09T14:01:32.000Z</published>
-    <updated>2024-10-09T14:02:20.304Z</updated>
-    
-    <content type="html"><![CDATA[<p>This message is used to verify that this feed (feedId:66838607891904512) belongs to me (userId:65993446112569344). Join me in enjoying the next generation information browser <a href="https://follow.is/">https://follow.is</a>.</p>]]></content>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:66838607891904512) belongs to me (userId:65993446112569344). Join me in enjoying the next generation information browser &lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Cloudflare部署免费临时邮箱系统</title>
