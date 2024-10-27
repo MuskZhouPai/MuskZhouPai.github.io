@@ -6,7 +6,7 @@
   <link href="https://blog.paipai.site/atom.xml" rel="self"/>
   
   <link href="https://blog.paipai.site/"/>
-  <updated>2024-08-12T01:54:36.833Z</updated>
+  <updated>2024-10-27T04:18:05.021Z</updated>
   <id>https://blog.paipai.site/</id>
   
   <author>
@@ -15,6 +15,114 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在serv00部署自己的博客网站并且follow认证</title>
+    <link href="https://blog.paipai.site/post/%E5%A6%82%E4%BD%95%E5%9C%A8serv00%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%B9%B6%E4%B8%94follow%E8%AE%A4%E8%AF%81.html"/>
+    <id>https://blog.paipai.site/post/%E5%A6%82%E4%BD%95%E5%9C%A8serv00%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%B9%B6%E4%B8%94follow%E8%AE%A4%E8%AF%81.html</id>
+    <published>2024-10-27T04:14:40.000Z</published>
+    <updated>2024-10-27T04:18:05.021Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="如何在serv00部署自己的博客网站并且follow认证"><a href="#如何在serv00部署自己的博客网站并且follow认证" class="headerlink" title="如何在serv00部署自己的博客网站并且follow认证"></a>如何在serv00部署自己的博客网站并且follow认证</h1><blockquote><p>你需要准备的东西是：</p><ol><li>一个serv00账号</li><li>一点点的电脑操作能力</li><li>一个域名</li></ol></blockquote><h3 id="一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）"><a href="#一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）" class="headerlink" title="一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）"></a>一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）</h3><ol><li><p>找到左侧菜单栏的WWW websites</p><p>![image-20241027114141735](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027114141735.png)</p></li><li><p>找到add new websites，并且添加你自己的域名</p><p>![image-20241027114255585](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027114255585.png)</p></li><li><p>点击DNS zones并找到自己刚刚的域名，点击域名右侧的edit查看解析</p><p>![image-20241027114405627](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027114405627.png)</p></li><li><p>在服务商添加解析，由于服务商众多，此处以cf为例</p><p>![image-20241027114618524](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027114618524.png)</p></li></ol><h3 id="二、部署typecho主程序"><a href="#二、部署typecho主程序" class="headerlink" title="二、部署typecho主程序"></a>二、部署typecho主程序</h3><ol><li><p>选择左侧烂file manager</p><p>![image-20241027114844244](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027114844244.png)</p></li><li><p>根据途中红框处选择位置</p><p>![image-20241027114920543](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027114920543.png)</p></li><li><p>删除public_html下原有文件并上传压缩包</p><p>![image-20241027115039453](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115039453.png)</p></li><li><p>选择explore后全选文件解压到public_html下文件夹</p><p>![image-20241027115137820](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115137820.png)</p></li><li><p>访问域名确认部署成功，显示如下即为成功</p><p>![image-20241027115256273](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115256273.png)</p></li></ol><h3 id="三、部署数据库"><a href="#三、部署数据库" class="headerlink" title="三、部署数据库"></a>三、部署数据库</h3><ol><li><p>选择左侧栏mysql，并且添加数据库</p><p>![image-20241027115353637](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115353637.png)</p></li><li><p>输入相应信息，并记住红框信息，注意连前面的m的前缀也要记住，点击add添加</p><p>![image-20241027115446469](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115446469.png)</p></li></ol><h3 id="四、运行typecho安装程序"><a href="#四、运行typecho安装程序" class="headerlink" title="四、运行typecho安装程序"></a>四、运行typecho安装程序</h3><ol><li><p>数据库地址请填写你自己的serv00面板地址，例如我的是panel10.serv00.com，数据库地址就是mysql10.serv00.com。你的是panel1，对应的就是mysql1</p><p>![image-20241027115637481](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115637481.png)</p></li><li><p>其余信息正常填写，然后选择开始安装</p><p>![image-20241027115725697](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115725697.png)</p></li><li><p>提示创建管理员则代表部署成功，正常输入信息并牢记</p><p>![image-20241027115833584](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115833584.png)</p></li></ol><h3 id="添加到follow并认证"><a href="#添加到follow并认证" class="headerlink" title="添加到follow并认证"></a>添加到follow并认证</h3><ol><li><p>访问博客的主页</p><p>![image-20241027115924685](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027115924685.png)</p></li><li><p>右键文章rss并复制链接</p><p>![image-20241027120016193](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120016193.png)</p></li><li><p>打开follow，注意如果没有部署ssl证书的时候，要把rss url自带的https改为http</p><p>![image-20241027120138084](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120138084.png)</p></li><li><p>订阅成功后，右键选择认证</p><p>![image-20241027120330344](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120330344.png)</p></li><li><p>登陆typecho后台</p><p>![image-20241027120405129](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120405129.png)</p></li><li><p>选择撰写，文章</p><p>![image-20241027120433129](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120433129.png)</p></li><li><p>输入认证内容，文章名随意，选择发布文章</p><p>![](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120501034.png)</p></li><li><p>回到follow选择认证即可完成</p><p>![image-20241027120603289](&#x2F;Users&#x2F;muskzhou&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20241027120603289.png)</p></li><li><p>此认证文章可以在认证完成后删除。</p></li></ol>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何在serv00部署自己的博客网站并且follow认证&quot;&gt;&lt;a href=&quot;#如何在serv00部署自己的博客网站并且follow认证&quot; class=&quot;headerlink&quot; title=&quot;如何在serv00部署自己的博客网站并且follow认证&quot;&gt;&lt;/a&gt;如何在serv00部署自己的博客网站并且follow认证&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;你需要准备的东西是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个serv00账号&lt;/li&gt;
+&lt;li&gt;一点点的电脑操作能力&lt;/li&gt;
+&lt;li&gt;一个域名&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）&quot;&gt;&lt;a href=&quot;#一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）&quot; class=&quot;headerlink&quot; title=&quot;一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）&quot;&gt;&lt;/a&gt;一、登陆serv00并且添加网站（无自己域名的请直接跳转到第二步）&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;找到左侧菜单栏的WWW websites&lt;/p&gt;
+&lt;p&gt;![image-20241027114141735](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027114141735.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找到add new websites，并且添加你自己的域名&lt;/p&gt;
+&lt;p&gt;![image-20241027114255585](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027114255585.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击DNS zones并找到自己刚刚的域名，点击域名右侧的edit查看解析&lt;/p&gt;
+&lt;p&gt;![image-20241027114405627](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027114405627.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在服务商添加解析，由于服务商众多，此处以cf为例&lt;/p&gt;
+&lt;p&gt;![image-20241027114618524](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027114618524.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;二、部署typecho主程序&quot;&gt;&lt;a href=&quot;#二、部署typecho主程序&quot; class=&quot;headerlink&quot; title=&quot;二、部署typecho主程序&quot;&gt;&lt;/a&gt;二、部署typecho主程序&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;选择左侧烂file manager&lt;/p&gt;
+&lt;p&gt;![image-20241027114844244](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027114844244.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;根据途中红框处选择位置&lt;/p&gt;
+&lt;p&gt;![image-20241027114920543](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027114920543.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除public_html下原有文件并上传压缩包&lt;/p&gt;
+&lt;p&gt;![image-20241027115039453](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115039453.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择explore后全选文件解压到public_html下文件夹&lt;/p&gt;
+&lt;p&gt;![image-20241027115137820](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115137820.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;访问域名确认部署成功，显示如下即为成功&lt;/p&gt;
+&lt;p&gt;![image-20241027115256273](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115256273.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;三、部署数据库&quot;&gt;&lt;a href=&quot;#三、部署数据库&quot; class=&quot;headerlink&quot; title=&quot;三、部署数据库&quot;&gt;&lt;/a&gt;三、部署数据库&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;选择左侧栏mysql，并且添加数据库&lt;/p&gt;
+&lt;p&gt;![image-20241027115353637](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115353637.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;输入相应信息，并记住红框信息，注意连前面的m的前缀也要记住，点击add添加&lt;/p&gt;
+&lt;p&gt;![image-20241027115446469](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115446469.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;四、运行typecho安装程序&quot;&gt;&lt;a href=&quot;#四、运行typecho安装程序&quot; class=&quot;headerlink&quot; title=&quot;四、运行typecho安装程序&quot;&gt;&lt;/a&gt;四、运行typecho安装程序&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;数据库地址请填写你自己的serv00面板地址，例如我的是panel10.serv00.com，数据库地址就是mysql10.serv00.com。你的是panel1，对应的就是mysql1&lt;/p&gt;
+&lt;p&gt;![image-20241027115637481](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115637481.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其余信息正常填写，然后选择开始安装&lt;/p&gt;
+&lt;p&gt;![image-20241027115725697](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115725697.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提示创建管理员则代表部署成功，正常输入信息并牢记&lt;/p&gt;
+&lt;p&gt;![image-20241027115833584](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115833584.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;添加到follow并认证&quot;&gt;&lt;a href=&quot;#添加到follow并认证&quot; class=&quot;headerlink&quot; title=&quot;添加到follow并认证&quot;&gt;&lt;/a&gt;添加到follow并认证&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;访问博客的主页&lt;/p&gt;
+&lt;p&gt;![image-20241027115924685](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027115924685.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;右键文章rss并复制链接&lt;/p&gt;
+&lt;p&gt;![image-20241027120016193](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027120016193.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;打开follow，注意如果没有部署ssl证书的时候，要把rss url自带的https改为http&lt;/p&gt;
+&lt;p&gt;![image-20241027120138084](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027120138084.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;订阅成功后，右键选择认证&lt;/p&gt;
+&lt;p&gt;![image-20241027120330344](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027120330344.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;登陆typecho后台&lt;/p&gt;
+&lt;p&gt;![image-20241027120405129](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027120405129.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择撰写，文章&lt;/p&gt;
+&lt;p&gt;![image-20241027120433129](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027120433129.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;输入认证内容，文章名随意，选择发布文章&lt;/p&gt;
+&lt;p&gt;![](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application Support&amp;#x2F;typora-user-images&amp;#x2F;image-20241027120501034.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;回到follow选择认证即可完成&lt;/p&gt;
+&lt;p&gt;![image-20241027120603289](&amp;#x2F;Users&amp;#x2F;muskzhou&amp;#x2F;Library&amp;#x2F;Application</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技术分享" scheme="https://blog.paipai.site/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="白嫖" scheme="https://blog.paipai.site/tags/%E7%99%BD%E5%AB%96/"/>
+    
+  </entry>
   
   <entry>
     <title>Cloudflare部署免费临时邮箱系统</title>
