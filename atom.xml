@@ -6,7 +6,7 @@
   <link href="https://blog.paipai.site/atom.xml" rel="self"/>
   
   <link href="https://blog.paipai.site/"/>
-  <updated>2024-10-27T04:29:48.243Z</updated>
+  <updated>2024-10-31T13:47:31.412Z</updated>
   <id>https://blog.paipai.site/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>verify</title>
+    <link href="https://blog.paipai.site/post/verify.html"/>
+    <id>https://blog.paipai.site/post/verify.html</id>
+    <published>2024-10-31T13:46:48.000Z</published>
+    <updated>2024-10-31T13:47:31.412Z</updated>
+    
+    <content type="html"><![CDATA[<p>This message is used to verify that this feed (feedId:73219013327210496) belongs to me (userId:65993446112569344). Join me in enjoying the next generation information browser <a href="https://follow.is/">https://follow.is</a>.</p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:73219013327210496) belongs to me (userId:65993446112569344). Join me in enjoying the next generation information browser &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何在serv00部署自己的博客网站并且follow认证</title>
